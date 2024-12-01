@@ -1,0 +1,11 @@
+name: activity types
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step
+        run: echo "PR has been created"
