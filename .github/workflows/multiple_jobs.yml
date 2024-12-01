@@ -1,0 +1,17 @@
+name : multiple jobs 
+on: workflow_dispatch
+jobs:
+  first-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing first
+        run: echo "printing first"
+  second-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing second 
+        run: echo "printing second"
+      
+      
+    
+  
