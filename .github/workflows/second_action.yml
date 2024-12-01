@@ -1,0 +1,13 @@
+name: second action
+on: push
+jobs:
+  first-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "push action 1"
+      - name: second step
+        run: echo "push action 2"
+    
+      
+  
