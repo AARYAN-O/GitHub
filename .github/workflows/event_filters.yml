@@ -2,7 +2,7 @@ name: event filters
 on: 
   push:
     branches:
-      - 'ma*'
+      - main
 jobs:
   first_job:
     runs-on: ubuntu-latest
