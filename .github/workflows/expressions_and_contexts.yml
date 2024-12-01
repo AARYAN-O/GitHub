@@ -1,0 +1,9 @@
+name: expressions and contexts
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: first_step
+        run: echo "${{toJSON(github)}}"
+    
