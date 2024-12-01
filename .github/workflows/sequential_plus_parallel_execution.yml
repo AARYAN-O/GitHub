@@ -1,0 +1,20 @@
+name: sequential plus parallel execution of jobs
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step_of_first_job
+        run: echo "first-job"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step_of_second_job
+        run: echo "second-job"
+  third-job:
+    needs: [first-job,second-job]
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step_of_third_job
+        run: echo "third-job"
+  
