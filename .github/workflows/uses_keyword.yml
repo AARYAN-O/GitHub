@@ -1,5 +1,5 @@
 name: uses keyword
-on: push
+on: workflow_dispatch
 jobs:
     uses_keyword:
       runs-on: ubuntu-latest
