@@ -8,6 +8,4 @@ jobs:
         run: echo "push action 1"
       - name: second step
         run: echo "push action 2"
-    
-      
   
