@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first_step
-        uses: actions/upload-artifacts@v4
+        uses: actions/upload-artifact@v4
         with: 
           path: GitHub/test_commit.py
         
